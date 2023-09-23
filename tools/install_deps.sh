@@ -313,18 +313,8 @@ sudo make install
 cd ~ && mkdir Pangolin && cd Pangolin
 git clone https://github.com/stevenlovegrove/Pangolin.git 
 cd Pangolin 
+git checkout eab3d3449a33a042b1ee7225e1b8b593b1b21e3e
 mkdir build && cd build 
-cmake ..
-make -j4
-sudo make install
-
-# OpenVSLAM
-cd ~ && mkdir openvslam && cd openvslam
-git clone https://github.com/laxnpander/openvslam.git
-cd openvslam
-git submodule init && git submodule update
-mkdir build && cd build
-cmake \
 cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr/local \
@@ -349,8 +339,7 @@ cmake \
     ..
 make -j4
 sudo make install
-make -j4
-sudo make install
+
 
 # OpenVSLAM
 cd ~ && mkdir openvslam && cd openvslam
