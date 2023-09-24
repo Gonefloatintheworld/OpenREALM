@@ -166,6 +166,36 @@ cmake \
 make -j4 
 sudo make install
 
+cd ~ && mkdir Pangolin && cd Pangolin
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin
+git checkout eab3d3449a33a042b1ee7225e1b8b593b1b21e3e
+mkdir build && cd build
+cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr/local \
+    -DBUILD_EXAMPLES=OFF \
+    -DBUILD_PANGOLIN_DEPTHSENSE=OFF \
+    -DBUILD_PANGOLIN_FFMPEG=OFF \
+    -DBUILD_PANGOLIN_LIBDC1394=OFF \
+    -DBUILD_PANGOLIN_LIBJPEG=OFF \
+    -DBUILD_PANGOLIN_LIBOPENEXR=OFF \
+    -DBUILD_PANGOLIN_LIBPNG=OFF \
+    -DBUILD_PANGOLIN_LIBTIFF=OFF \
+    -DBUILD_PANGOLIN_LIBUVC=OFF \
+    -DBUILD_PANGOLIN_LZ4=OFF \
+    -DBUILD_PANGOLIN_OPENNI=OFF \
+    -DBUILD_PANGOLIN_OPENNI2=OFF \
+    -DBUILD_PANGOLIN_PLEORA=OFF \
+    -DBUILD_PANGOLIN_PYTHON=OFF \
+    -DBUILD_PANGOLIN_TELICAM=OFF \
+    -DBUILD_PANGOLIN_UVC_MEDIAFOUNDATION=OFF \
+    -DBUILD_PANGOLIN_V4L=OFF \
+    -DBUILD_PANGOLIN_ZSTD=OFF \
+    ..
+make -j4 && sudo make install
+
+
 # OpenVSLAM
 cd ~ && mkdir openvslam && cd openvslam
 git clone https://github.com/laxnpander/openvslam.git
