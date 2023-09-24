@@ -95,8 +95,6 @@ sudo apt-get install -y gfortran
 # other dependencies
 sudo apt-get install -y libyaml-cpp-dev libgoogle-glog-dev libgflags-dev
 
-sudo apt-get install -y libprotobuf-dev protobuf-compiler
-
 # Install Eigen
 cd ~ && mkdir Eigen3 && cd Eigen3
 wget -q https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.bz2
