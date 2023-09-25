@@ -203,8 +203,8 @@ cd openvslam
 git submodule init && git submodule update
 mkdir build && cd build
 cmake \
-    -DUSE_PANGOLIN_VIEWER=OFF \
-    -DINSTALL_PANGOLIN_VIEWER=OFF \
+    -DUSE_PANGOLIN_VIEWER=ON \
+    -DINSTALL_PANGOLIN_VIEWER=ON \
     -DUSE_SOCKET_PUBLISHER=OFF \
     -DUSE_STACK_TRACE_LOGGER=ON \
     -DBUILD_TESTS=ON \
