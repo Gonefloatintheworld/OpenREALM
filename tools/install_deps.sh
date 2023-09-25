@@ -194,7 +194,8 @@ cmake \
     -DBUILD_PANGOLIN_ZSTD=OFF \
     -DBUILD_PANGOLIN_FFMPEG=OFF\
     ..
-make -j4 && sudo make install
+make -j4 
+sudo make install
 
 
 # OpenVSLAM
