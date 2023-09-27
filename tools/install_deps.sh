@@ -169,7 +169,8 @@ sudo make install
 cd ~ && mkdir Pangolin && cd Pangolin
 git clone https://github.com/stevenlovegrove/Pangolin.git
 cd Pangolin
-git checkout eab3d3449a33a042b1ee7225e1b8b593b1b21e3e
+git checkout v0.6
+git switch -c v0.6
 mkdir build && cd build
 cmake \
     -DCMAKE_BUILD_TYPE=Release \
