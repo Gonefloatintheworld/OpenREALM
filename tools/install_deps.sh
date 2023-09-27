@@ -80,6 +80,8 @@ sudo apt-get install -y -q exiv2 libexiv2-dev apt-utils
 # Used by Pangolin/OpenGL
 sudo apt-get install -y -q libglew-dev libxkbcommon-dev libglu1-mesa-dev freeglut3-dev mesa-common-dev
 sudo apt-get install -y -q libxi-dev libxmu-dev libxmu-headers x11proto-input-dev
+sudo apt-get install mesa-utils
+glxinfo | grep OpenGL
 
 # g2o dependencies
 sudo apt-get install -y libatlas-base-dev libsuitesparse-dev
